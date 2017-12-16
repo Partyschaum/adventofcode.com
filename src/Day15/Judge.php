@@ -20,7 +20,6 @@ class Judge
     {
         if ($this->comparator->compare($a, $b)) {
             $this->matches++;
-            printf("Found match %d for [%s, %s]\n", $this->matches, $a, $b);
         }
     }
 
