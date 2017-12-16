@@ -1,0 +1,24 @@
+{
+    "name": "partyschaum/adventofcode.com",
+    "description": "Jeden Tag ein Türchen",
+    "type": "project",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Partyschaum\\AdventOfCode\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "Partyschaum\\AdventOfCode\\Tests\\": "tests/" }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hauke Stange",
+            "email": "partyschaum@posteo.de"
+        }
+    ]
+}
