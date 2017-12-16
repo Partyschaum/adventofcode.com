@@ -2,7 +2,8 @@
 
 namespace Partyschaum\AdventOfCode\Tests\Day15;
 
-use Partyschaum\AdventOfCode\Day15\Comparator;
+use Partyschaum\AdventOfCode\Day15\BitComparator;
+use Partyschaum\AdventOfCode\Day15\StringComparator;
 use Partyschaum\AdventOfCode\Day15\Judge;
 use PHPUnit\Framework\TestCase;
 
@@ -21,7 +22,7 @@ class JudgeTest extends TestCase
             [1352636452, 285222916],
         ];
 
-        $judge = new Judge(new Comparator());
+        $judge = new Judge(new BitComparator());
 
         foreach ($sequence as $pair) {
             $judge->compare($pair[0], $pair[1]);
